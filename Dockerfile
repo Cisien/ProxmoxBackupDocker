@@ -13,6 +13,10 @@ RUN apt-get update
 RUN apt-get install proxmox-backup-server -y
 
 #start!
+VOLUME /pbs/datastore
+VOLUME /etc/proxmox-backups
+VOLUME /var/log/proxmox-backup
+
 EXPOSE 8007
 COPY entrypoint.sh /
 RUN chmod a+x /entrypoint.sh
