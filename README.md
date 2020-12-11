@@ -32,3 +32,4 @@ NOTE! This image installs and updates PBS from the no-subscription repository. D
           - /pbs/config:/etc/proxmox-backup
           - /pbs/datastore:/datastore
 ```
+
